@@ -5,24 +5,18 @@ import java.util.List;
 public class Chamados {
 
 	private int ID_chamados;
-	private Veiculo veiculo;
 	private Veiculo km_inicial;
 	private Veiculo km_final;
-	private List<Colaborador> colaborador;
 	
+	private List<Colaborador> colaborador;
+	private List<Veiculo> modelo_veiculo;
+
 	public int getID_chamados() {
 		return ID_chamados;
 	}
 
 	public void setID_chamdos(int iD_chamdos, int ID_chamados) {
 		this.ID_chamados = ID_chamados;
-	}
-	
-	public Veiculo getVeiculo() {
-		return veiculo;
-	}
-	public void setVeiculo(Veiculo veiculo) {
-		this.veiculo = veiculo;
 	}
 	
 	public Veiculo getkm_inicial() {
@@ -39,14 +33,18 @@ public class Chamados {
 		this.km_final = km_final;
 	}
 
-	
 	public List<Colaborador> getColaborador() {
 		return colaborador;
 	}
-	public void setItensVenda(List<Colaborador> colaborador) {
+	public void setColaborador(List<Colaborador> colaborador) {
 		this.colaborador = colaborador;
 	}
-
+	public List<Veiculo> getveiculo() {
+		return modelo_veiculo;
+	}
+	public void setVeiculo(List<Veiculo> modelo_veiculo) {
+		this.modelo_veiculo = modelo_veiculo;
+	}
 }
 
 	
